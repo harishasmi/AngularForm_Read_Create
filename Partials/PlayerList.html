@@ -1,0 +1,21 @@
+﻿<h3>Player List</h3>
+{{message}}
+
+
+<table>
+    <tr>
+        <th>Serial Number</th>
+        <th>Name</th>
+        <th>Club</th>
+        <th>Country</th>
+    </tr>
+    <tr ng-repeat="player in listPlayers">
+        <td>{{$index + 1}}</td>
+        <td>{{player.Name}}</td>
+        <td>{{player.Club}}</td>
+        <td>{{player.Country}}</td>
+    </tr>
+</table>
+
+
+<a href="#!/AddPlayer">Add Player</a>
